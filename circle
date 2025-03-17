@@ -1,0 +1,20 @@
+import turtle
+t = turtle.Turtle() #t is initializing a turtle aka pointer aka pen
+sc = turtle.Screen() #intializes screen
+sc.bgcolor("black") #bg color
+t.pencolor("red") #turtle color
+a=1
+b=1
+t.speed(0)
+t.penup()
+t.goto(0,200)
+t.pendown()
+while True:
+    t.forward(a)
+    t.right(b)
+    a+=3
+    b+=1
+    if b == 150:
+        break
+
+turtle.done()
